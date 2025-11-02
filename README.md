@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.J Fashion</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 24px;
+            letter-spacing: 3px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            padding: 30px;
+        }
+
+        .image-box {
+            text-align: center; /* النص تحت الصورة يكون في الوسط */
+        }
+
+        .image-box img {
+            width: 300px;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+
+        .image-box img:hover {
+            transform: scale(1.05);
+        }
+
+        .image-box p {
+            margin-top: 10px; /* مسافة بين الصورة والنص */
+            font-weight: bold;
+        }
+
+        .sections {
+            text-align: center;
+            padding: 40px;
+        }
+
+        .sections input, .sections textarea {
+            width: 80%;
+            max-width: 400px;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        A.J FASHION DESIGN
+    </header>
+
+    <section class="gallery">
+        <div class="image-box">
+            <img src="q.png" alt="Fashion 1">
+            <p>    كاجول  </p>     
+        </div>
+        <div class="image-box">
+            <img src="aaaa.jpg" alt="Fashion 2">
+            <p>   فساتين   </p>      
+        </div>
+        <div class="image-box">
+            <img src="zz.png" alt="Fashion 3">
+            <p>    كلاسيكي </p>  
+        </div>
+    </section>
+
+    <section class="sections">
+        <h2>اكتب خاناتك هون (مثلاً: تواصل معنا : عبد الرحمن جهاد القاضي / منتجاتنا / نبذة عن الشركة)</h2>
+        <input type="text" placeholder="اكتب النص هون...">
+        <textarea placeholder="محتوى الخانة..."></textarea>
+    </section>
+
+    <footer>
+        © 2025 A.J Fashion. All rights reserved.
+    </footer>
+
+</body>
+</html>
